@@ -6,8 +6,13 @@ export class Api {
   public httpClient: Axios;
 
   constructor(baseURL: string) {
+    const isServer = typeof window === "undefined";
+    const resolvedBaseURL = isServer
+      ? process.env.NEXT_PUBLIC_API_SERVER_URL
+      : baseURL || process.env.NEXT_PUBLIC_API_CLIENT_URL;
+
     this.httpClient = axios.create({
-      baseURL,
+      baseURL: resolvedBaseURL,
       responseType: "json",
       headers: {
         Accept: "application/json",
@@ -103,4 +108,4 @@ export class Api {
   }
 }
 
-export const apiService = new Api("http://localhost/api");
+export const apiService = new Api(process.env.NEXT_PUBLIC_API_URL ?? '');
