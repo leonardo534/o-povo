@@ -110,14 +110,16 @@ pages/ # Rotas da aplicação
 components/ # Componentes React reutilizáveis
 public/ # Arquivos estáticos
 styles/ # Arquivos CSS 
+context/ # Contextos
 hooks/ # Custom React hooks
+utils/ # Funções utilitárias
+.env.local # Variáveis de ambiente
+
 
 ## Usuario Teste
 
 user: test@example.com
 password: 12345678
-utils/ # Funções utilitárias
-.env.local # Variáveis de ambiente
 
 ## 📝 Licença
 
