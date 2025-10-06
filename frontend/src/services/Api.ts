@@ -103,4 +103,4 @@ export class Api {
   }
 }
 
-export const apiService = new Api("http://localhost:8000/api");
+export const apiService = new Api("http://localhost/api");
