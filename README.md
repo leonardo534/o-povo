@@ -109,9 +109,13 @@ npm start
 pages/ # Rotas da aplicação
 components/ # Componentes React reutilizáveis
 public/ # Arquivos estáticos
-styles/ # Arquivos CSS / SCSS
+styles/ # Arquivos CSS 
 hooks/ # Custom React hooks
-context/ # Context API
+
+## Usuario Teste
+
+user: test@example.com
+password: 12345678
 utils/ # Funções utilitárias
 .env.local # Variáveis de ambiente
 
