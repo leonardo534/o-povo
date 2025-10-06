@@ -12,6 +12,8 @@ ARG DOCKER_ENV=prod
 
 COPY . .
 
+COPY .env.example.env
+
 RUN yarn build
 
 FROM base AS runner
